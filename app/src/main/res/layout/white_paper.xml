@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_wallet_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_2E303B" />
+
+    <TextView
+        android:id="@+id/content_idl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_10"
+
+        />
+</LinearLayout>

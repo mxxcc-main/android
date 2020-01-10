@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dp_16">
+
+        <TextView
+            android:id="@+id/coin_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="CCM"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+
+        <TextView
+            android:id="@+id/coin_rmb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="2453.53"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/in_out"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/dp_20"
+            android:layout_weight="0.25"
+            android:background="@color/color_00c9a7"
+            android:gravity="center"
+            android:padding="@dimen/dp_2"
+            android:text="IN"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_10"
+
+            />
+
+
+        <TextView
+            android:id="@+id/trans_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="2019-01-02 12:11:25"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/trans_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="failure"
+            android:textColor="#FB4848"
+            android:textSize="@dimen/sp_10" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c_time0113_88f0f0f0" />
+
+</LinearLayout>

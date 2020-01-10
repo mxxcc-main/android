@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2E303B"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nl_wallet_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_0890c2_radius_4dp_code_address"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_wallet_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="@dimen/dp_20"
+                android:singleLine="false"
+                android:text="0x0000000000000000000000000000000000000000"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/tv_code_copy"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_margin="@dimen/dp_10"
+                android:src="@mipmap/icon_copy_white"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="30dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dp_10"
+                android:text="收款地址"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18"
+
+                />
+
+            <ImageView
+                android:id="@+id/iv_code_copy"
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="@dimen/dp_180"
+                android:padding="@dimen/dp_3" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

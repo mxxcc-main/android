@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FBFCFC"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_wallet_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.qy.ccm.view.TabPageIndicator
+        android:id="@+id/viewpager_indic"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

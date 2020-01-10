@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fbfbfd"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_wallet_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_232"
+        android:background="@color/color_fbfbfd"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.lijiankun24.shadowlayout.ShadowLayout
+            android:id="@+id/wallet_icon"
+            android:layout_width="@dimen/dp_68"
+            android:layout_height="@dimen/dp_68"
+            android:gravity="center"
+            app:shadowColor="#66000000"
+            app:shadowDx="0dp"
+            app:shadowDy="0dp"
+            app:shadowRadius="2dp"
+            app:shadowSide="all">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/color_ffffff"
+                android:padding="5dp"
+                android:src="@mipmap/ccm" />
+
+
+        </com.lijiankun24.shadowlayout.ShadowLayout>
+
+        <TextView
+            android:id="@+id/wallet_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="CCM Wallet"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_19" />
+
+        <TextView
+            android:id="@+id/version_info_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0.1"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_18" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/notice_center_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dp_10">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_8"
+            android:layout_weight="1"
+            android:text="网址"
+            android:textColor="@color/color_63727D"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+        <TextView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="www.ccmisr.com"
+            android:textColor="@color/color_0f89cc"
+            android:textSize="@dimen/dp_16"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_fallback_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_13"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dp_10"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_8"
+            android:layout_weight="1"
+            android:text="客服"
+            android:textColor="@color/color_63727D"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+        <TextView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="400-1234-1234"
+            android:textColor="@color/color_0f89cc"
+            android:textSize="@dimen/sp_16" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/change_pass_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_13"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dp_10">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_8"
+            android:layout_weight="1"
+            android:text="邮箱"
+            android:textColor="@color/color_63727D"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+        <TextView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="ccm@ccmisr.com"
+            android:textColor="@color/color_0f89cc"
+            android:textSize="@dimen/sp_16" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_protel_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/dp_10"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_8"
+            android:layout_weight="1"
+            android:text="微信"
+            android:textColor="@color/color_63727D"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+        <TextView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="1@ccm"
+            android:textColor="@color/color_0f89cc"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

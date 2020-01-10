@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_wallet_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_2E303B" />
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/lr_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_60"-->
+    <!--android:layout_marginBottom="1dp"-->
+    <!--android:background="@color/color_424959"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingHorizontal="@dimen/dp_10">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/dp_24"-->
+    <!--android:layout_height="@dimen/dp_24"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@mipmap/usdt"-->
+
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="@dimen/dp_10"-->
+    <!--android:text="USDT"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/sp_16"-->
+
+    <!--/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="@dimen/dp_25"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="right"-->
+    <!--android:text="￥24533.53"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/sp_16" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="right"-->
+    <!--android:text="$4325.6"-->
+    <!--android:textColor="@color/color_80ffffff"-->
+    <!--android:textSize="@dimen/sp_12" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="@dimen/dp_70"-->
+    <!--android:layout_height="@dimen/dp_30"-->
+    <!--android:background="#41c977"-->
+    <!--android:gravity="center_vertical|center_horizontal"-->
+    <!--android:text="+0.45%"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/sp_14" />-->
+
+    <!--</LinearLayout>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_60"-->
+    <!--android:layout_marginBottom="1dp"-->
+    <!--android:background="@color/color_424959"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingHorizontal="@dimen/dp_10">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/dp_24"-->
+    <!--android:layout_height="@dimen/dp_24"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@mipmap/btc"-->
+
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="@dimen/dp_10"-->
+    <!--android:text="BTC"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/sp_16"-->
+
+    <!--/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="@dimen/dp_25"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/coin_rmb"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="right"-->
+    <!--android:text="￥24533.53"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/sp_16" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="right"-->
+    <!--android:text="$4325.6"-->
+    <!--android:textColor="@color/color_80ffffff"-->
+    <!--android:textSize="@dimen/sp_12" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="@dimen/dp_70"-->
+    <!--android:layout_height="@dimen/dp_30"-->
+    <!--android:background="#FB4848"-->
+    <!--android:gravity="center_vertical|center_horizontal"-->
+    <!--android:text="-0.13%"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/sp_14" />-->
+
+    <!--</LinearLayout>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_60"-->
+    <!--android:layout_marginBottom="1dp"-->
+    <!--android:background="@color/color_424959"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingHorizontal="@dimen/dp_10">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/coin_img"-->
+    <!--android:layout_width="@dimen/dp_24"-->
+    <!--android:layout_height="@dimen/dp_24"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@mipmap/eth"-->
+
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/coin_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="@dimen/dp_10"-->
+    <!--android:text="ETH"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/sp_16"-->
+
+    <!--/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="@dimen/dp_25"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="right"-->
+    <!--android:text="￥25346.53"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/sp_16" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/coin_usd"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="right"-->
+    <!--android:text="$4325.6"-->
+    <!--android:textColor="@color/color_80ffffff"-->
+    <!--android:textSize="@dimen/sp_12" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/up_down"-->
+    <!--android:layout_width="@dimen/dp_70"-->
+    <!--android:layout_height="@dimen/dp_30"-->
+    <!--android:background="#41c977"-->
+    <!--android:gravity="center_vertical|center_horizontal"-->
+    <!--android:text="+0.45%"-->
+    <!--android:textColor="@color/color_ffffff"-->
+    <!--android:textSize="@dimen/sp_14" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<com.qy.ccm.view.MyWebView-->
+    <!--android:id="@+id/myv_advertising"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+
+</LinearLayout>

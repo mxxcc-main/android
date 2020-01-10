@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qy.ccm">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <!-- 存储读权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 存储写权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--拨打电话权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--安卓8.0+ 安装apk 需要权限-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+<!--    读取手机状态-->
+    <uses-permission android:name="READ_PHONE_STATE" />
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ccm"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ccm"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".aty.SplashAty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--  tools:replace="allowBackup,appComponentFactory"-->
+        <!--   android:appComponentFactory="android.support.v4.app.CoreComponentFactory"-->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.update"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--注意！！！！！！Manifest里面，新加了一个【provider】，然后属性里新加了一条【authorities】，这个作为用户权限的申请。【${applicationId}.update】,见【UpdateVersionController】的【openFile】方法。参考资料：https://stackoverflow.com/questions/30896130/fileprovider-crash-npe-attempting-to-invoke-xmlresourceparser-on-a-null-string-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/apk_update" />            <!--此处，新建了一个【XML文件】-->
+            <!--如果找不到明明已经下载在本地的文件，则参考这里的资料：https://blog.csdn.net/fxdiql/article/details/63748887-->
+        </provider>
+
+        <activity android:name=".aty.account.LoginAty" />
+        <activity android:name=".aty.account.LoginAndRegisterAty" />
+        <activity android:name=".aty.wallet.WalletMnemonicAty" />
+        <activity android:name=".aty.wallet.VerificationMnemonicAty" />
+        <activity android:name=".aty.wallet.WalletPasswordAty" />
+        <activity android:name=".aty.wallet.WalletAlterPasswordAty" />
+        <activity android:name=".aty.MainAty" />
+        <activity android:name=".aty.wallet.WalletTransactionAty" />
+        <activity android:name=".aty.wallet.WalletMarketAty" />
+        <activity android:name=".aty.wallet.WalletTransferAty" />
+        <activity android:name=".aty.wallet.WalletTransferSuccessAty" />
+        <activity android:name=".aty.account.RegisterAty" />
+        <activity android:name=".aty.wallet.ImputWalletAty" />
+        <activity android:name=".aty.wallet.WalletTransfer2Aty" />
+        <activity android:name=".aty.wallet.WalletCodeAty" />
+        <activity android:name=".aty.wallet.ImputWalletPrivateAty" />
+        <activity android:name=".aty.my.MyAboutAty" />
+        <activity android:name=".aty.my.MyOpinionAty" />
+        <activity android:name=".aty.WelcomeAty" />
+        <activity android:name=".aty.wallet.MyCodeAty" />
+        <activity android:name=".aty.my.ChangePasswordAty" />
+        <activity android:name=".aty.my.InviteCodeAty" />
+        <activity android:name=".aty.my.WhitePaperAty" />
+        <activity android:name=".aty.my.AboutUsAty" />
+        <activity android:name=".aty.my.CreBtcAty" />
+        <activity android:name=".aty.my.UserRedemptionRecordsAty" />
+        <activity android:name=".aty.my.UserEarnRecordsAty" />
+        <activity android:name=".aty.my.MyFincialRecordsAty" />
+        <activity android:name=".aty.wallet.WalletAdvertisingAty" />
+        <activity android:name=".aty.my.ExportPrikeyAty" />
+        <activity android:name=".aty.wallet.ImputWalletPriAty" />
+        <activity android:name=".aty.my.UserTangguoAty" />
+        <activity android:name=".aty.my.UserZhongchuAty" />
+        <activity android:name=".aty.account.ForgetPasswordAty" />
+        <activity android:name=".aty.IntroActivity" />
+        <activity android:name=".aty.wallet.ImputWalletAndCreateWalletAty" />
+        <activity android:name=".aty.wallet.CreateImportAty" />
+        <activity android:name=".aty.wallet.ChangeLanguageAty" />
+        <activity android:name=".aty.wallet.CreateWalletAty" />
+        <activity android:name=".aty.wallet.PrivateKeyImportAty" />
+        <activity android:name=".aty.wallet.NonnemicWordImportAty" />
+        <activity android:name=".aty.wallet.NoticeCenterViewPagerAty" />
+        <activity android:name=".aty.wallet.UserFallbackAty" />
+        <activity android:name=".aty.wallet.ChangePassAty" />
+        <activity android:name=".aty.wallet.UserProtiAty" />
+        <activity android:name=".aty.wallet.AboutUsAty" />
+        <activity android:name=".aty.wallet.CurrVersionAty" />
+        <activity android:name=".aty.wallet.VerificationMnemonicWordAty" />
+        <activity android:name=".fragment.main.CreateWalletInAty" />
+        <activity android:name=".fragment.main.NonImportWalletInAty" />
+        <activity android:name=".fragment.main.PrivateImportWalletInAty" />
+        <activity android:name=".fragment.main.CreateImportWalletInAty" />
+        <activity android:name=".fragment.find.WebViewAty" />
+
+    </application>
+
+</manifest>

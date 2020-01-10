@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape>
+            <corners android:radius="3dp" />
+            <solid android:color="@color/color_C6A771" />
+
+            <!--设置大小时，应注意Switch显示时UI内容的高度会以此高度为依据-->
+            <size android:width="@dimen/dp_72" android:height="28dp" />
+            <!--添加一个边，使UI更好看，
+            当false时为未选择状态的底图颜色，true时为选择状态的底图颜色。-->
+            <!--<stroke android:width="1dp" android:color="@android:color/darker_gray" />-->
+        </shape>
+    </item>
+
+    <item android:state_checked="false">
+        <shape>
+            <corners android:radius="3dp" />
+            <solid android:color="@color/color_C6A771" />
+
+            <!--设置大小时，应注意Switch显示时UI内容的高度会以此高度为依据-->
+            <size android:width="@dimen/dp_72" android:height="28dp" />
+            <!--添加一个边，使UI更好看，
+            当false时为未选择状态的底图颜色，true时为选择状态的底图颜色。-->
+            <!--<stroke android:width="1dp" android:color="@android:color/darker_gray" />-->
+        </shape>
+    </item>
+</selector>

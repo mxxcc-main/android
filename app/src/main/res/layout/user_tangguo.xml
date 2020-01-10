@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_wallet_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_2E303B" />
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/lr_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f7f7f7" />
+
+    <include
+        android:id="@+id/empty"
+        layout="@layout/empty" />
+
+
+</LinearLayout>

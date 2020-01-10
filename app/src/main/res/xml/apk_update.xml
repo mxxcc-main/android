@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<external-files-path-->
+    <!--name="my_download"-->
+    <!--path="Download"/>-->
+    <!--修正之后，一切可行。参考资料：https://blog.csdn.net/fxdiql/article/details/63748887-->
+    <external-path
+        name="my_download"
+        path="Download" />
+</paths>

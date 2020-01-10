@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_input_wallet_new"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:background="@mipmap/add_wallet_new"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:textSize="@dimen/sp_16">
+
+
+    <TextView
+        android:id="@+id/coin_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="导入BTC私钥"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_18"
+
+        />
+
+    <TextView
+        android:id="@+id/coin_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="未导入私钥将生成默认钱包地址"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

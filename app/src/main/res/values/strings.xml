@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">CCM Wallet</string>
+    <string name="loadingplswait">正在加载中，请稍等...</string>
+    <string name="next">下一步</string>
+    <string name="affirm">确认</string>
+    <string name="main">钱包</string>
+    <string name="management">AI收益</string>
+    <string name="application">应用</string>
+    <string name="find">发现</string>
+    <string name="market">行情</string>
+    <string name="myself">我的</string>
+    <string name="copysucceed">复制成功</string>
+
+    <!--钱包-->
+    <string name="verification_mnemonic">验证你的钱包助记词</string>
+    <string name="set_transaction_password">设置交易密码</string>
+    <string name="input_transaction_password1">请输入新的交易密码</string>
+    <string name="input_transaction_password2">请确认新的交易密码</string>
+    <string name="input_transaction_password3">请输入交易原密码</string>
+    <string name="input_transaction_password4">请输入交易新密码</string>
+    <string name="inconformity_password">两次输入的密码不一致</string>
+    <string name="nav_header_desc">早上好，</string>
+    <string name="nav_header_subtitle">欢迎使用</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="imput_mnemonic">请输入正确的助记词/私钥</string>
+    <string name="expenditure">支出</string>
+    <string name="income">收入</string>
+    <string name="transfer">确认转账</string>
+    <string name="create_wallet">创建钱包</string>
+    <string name="input_mn">导入助记词</string>
+    <string name="input_pr">导入私钥</string>
+    <string name="reset">重置</string>
+    <string name="retrieve_password">找回交易密码:</string>
+    <string name="imput_private_context">请输入私钥内容至输入框</string>
+    <string name="imput_mn_context">请输入助记词至输入框</string>
+    <string name="imput_private_case">请留意字母大小写</string>
+    <string name="imput_private_what">什么是私钥</string>
+    <string name="imput_mn_what">什么是助记词</string>
+    <string name="about_me">关与我们</string>
+    <string name="about_opinion">意见反馈</string>
+
+
+    <!--网络状态-->
+    <string name="requesttimeout">请求超时</string>
+    <string name="connecttimeout">网络连接超时</string>
+    <string name="SSLhandshakeexception">安全证书异常</string>
+    <string name="httpexception">网络异常，请检查您的网络状态</string>
+    <string name="http404">请求的网络地址不存在</string>
+    <string name="http500">服务器异常</string>
+    <string name="requestfailure">请求失败</string>
+    <string name="unknownhostexception">域名解析失败</string>
+    <string name="error">错误:</string>
+    <string name="ccm_wallet">CCM Wallet</string>
+    <string name="my">我的</string>
+    <string name="language_zh">简体中文</string>
+    <string name="language_en">English</string>
+
+
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_wallet_mnemonic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c_time0113_88f0f0f0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingVertical="@dimen/dp_10"
+        android:text="请准确抄写并安全备份助记词。"
+        android:textColor="@color/color_63727D"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:background="#B2B7BF" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mnemonic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_19" />
+
+
+    <Button
+        android:id="@+id/tv_mnemonic_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_75"
+        android:layout_marginBottom="@dimen/dp_69"
+        android:background="@drawable/color_1186ce_color_0692c2_jianbian"
+        android:gravity="center"
+        android:padding="@dimen/dp_12"
+        android:text="下一步"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

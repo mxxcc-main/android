@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fbfbfd"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_crebtc_name"
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户名：liuyan"
+        android:textSize="52sp"
+        android:textAlignment="center"
+        >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_crebtc_start"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/dp_200"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="创建BTC钱包"
+        ></Button>
+
+</LinearLayout>

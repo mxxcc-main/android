@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_main"
+        android:icon="@mipmap/icon_wallet_gray"
+        android:title="@string/main" />
+
+    <item
+        android:id="@+id/menu_management"
+        android:icon="@mipmap/icon_market_gray"
+        android:title="@string/market" />
+
+    <item
+        android:id="@+id/menu_find"
+        android:icon="@mipmap/icon_found_gray"
+        android:title="@string/find" />
+
+    <item
+        android:id="@+id/menu_my"
+        android:icon="@mipmap/icon_user_gray"
+        android:title="@string/my" />
+
+</menu>

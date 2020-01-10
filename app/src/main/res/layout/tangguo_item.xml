@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_80"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_0">
+
+    <TextView
+        android:id="@+id/desc_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="德索萨幅度萨芬"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_f7f7f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="糖果数量："
+            android:textColor="@color/grgray"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/tangguo_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="0.00 WINT"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tangguo_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="2019-06-28 18:18:18"
+            android:textColor="@color/grgray"
+            android:textSize="@dimen/sp_11" />
+
+    </LinearLayout>
+</LinearLayout>

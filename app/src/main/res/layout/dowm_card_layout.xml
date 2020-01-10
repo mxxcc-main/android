@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="100dp"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_5">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:checked="false"
+                android:clickable="false"
+                android:text="BTC" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:checked="false"
+                android:clickable="false"
+                android:text="USDT" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:clickable="false"
+                android:text="CCM"
+
+                />
+
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

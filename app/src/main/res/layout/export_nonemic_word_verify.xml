@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_verification_mnemonic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingVertical="@dimen/dp_10"
+        android:text="请按照顺序，将助记词填入框内。。"
+        android:textColor="@color/color_63727D"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:background="@color/color_6071B4" />
+
+    <TextView
+        android:id="@+id/tv_verification_mnemonic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_122"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@color/color_f1f1f1"
+        android:hint="请按照顺序填入助记词"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/color_00002F" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_verification_mnemonic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_mnemonic_next"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_80"
+        android:background="@drawable/color_1186ce_color_0692c2_jianbian"
+        android:gravity="center"
+        android:padding="@dimen/dp_12"
+        android:text="完成"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

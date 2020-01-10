@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f7f7"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_wallet_market"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_2E303B" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_139"
+        android:background="@color/color_ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="累计收益(WINT)"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/all_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="00.00"
+            android:textColor="@color/color_C6A771"
+            android:textSize="@dimen/sp_42" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_ffffff"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_48"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="日期"
+            android:textColor="@color/color_2E303B"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_48"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="收益"
+            android:textColor="@color/color_2E303B"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_48"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="激励"
+            android:textColor="@color/color_2E303B"
+            android:textSize="@dimen/sp_16"
+
+            />
+
+    </LinearLayout>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/lv_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/color_ffffff"
+
+        />
+
+    <include
+        android:id="@+id/empty"
+        layout="@layout/empty" />
+
+</LinearLayout>

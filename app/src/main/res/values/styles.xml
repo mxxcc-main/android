@@ -1,0 +1,126 @@
+<resources>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_2E303B</item>
+    </style>
+
+    <style name="splash_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@mipmap/icon_splash</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="simple_spinner_item" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">#A6C1FF</item>
+    </style>
+
+    <style name="DialogThemeHalfAlpa" parent="@android:style/Theme.Dialog">
+        <!-- 边框   -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!-- 全屏-->
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="DialogThemeHalfAlpa1" parent="@android:style/Theme.Dialog">
+        <!-- 边框   -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#80ffffff</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!-- 全屏-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- Active thumb color & Active track color(30% transparency)
+            switch 打开时的拇指按钮的颜色 轨迹颜色默认为30%这个颜色 -->
+        <item name="colorControlActivated">@color/color_ffffff</item>
+        <!-- Inactive thumb color switch关闭时的拇指按钮的颜色 -->
+        <item name="colorSwitchThumbNormal">@color/color_ffffff</item>
+        <!-- Inactive track color(30% transparency) switch关闭时的轨迹的颜色  30%这个颜色 -->
+        <item name="android:colorForeground">@color/color_ffffff</item>
+        <!--使用方法：
+        在布局文件中给需要自定义控件中增加app:theme="@style/MySwitch"-->
+    </style>
+
+    <style name="ManagerSwitch" parent="Theme.AppCompat.Light">
+        <!-- Active thumb color & Active track color(30% transparency)
+            switch 打开时的拇指按钮的颜色 轨迹颜色默认为30%这个颜色 -->
+        <item name="colorControlActivated">@color/color_2E303B</item>
+        <!-- Inactive thumb color switch关闭时的拇指按钮的颜色 -->
+        <item name="colorSwitchThumbNormal">@color/color_2E303B</item>
+        <!-- Inactive track color(30% transparency) switch关闭时的轨迹的颜色  30%这个颜色 -->
+        <item name="android:colorForeground">@color/color_2E303B</item>
+        <!--使用方法：
+        在布局文件中给需要自定义控件中增加app:theme="@style/MySwitch"-->
+    </style>
+
+
+    <!--<style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">-->
+    <!--<item name="android:colorControlNormal" tools:targetApi="lollipop">@color/colorPrimaryDark</item>-->
+    <!--</style>-->
+    <style name="radius_image">
+        <item name="android:radius">18dp</item>
+    </style>
+
+    <declare-styleable name="RecyclerViewBannerBase">
+        <attr name="interval" />
+        <attr name="showIndicator" />
+        <attr name="orientation" />
+        <attr name="autoPlaying" />
+        <attr name="indicatorSelectedSrc" format="color|reference" />
+        <attr name="indicatorUnselectedSrc" format="color|reference" />
+        <attr name="indicatorSpace" format="dimension|reference" />
+        <attr name="indicatorMarginLeft" format="dimension|reference" />
+        <attr name="indicatorMarginRight" format="dimension|reference" />
+        <attr name="indicatorMarginBottom" format="dimension|reference" />
+        <attr name="indicatorGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BannerLayout">
+        <attr name="interval" />
+        <attr name="showIndicator" />
+        <attr name="orientation" />
+        <attr name="autoPlaying" />
+        <attr name="itemSpace" format="integer" />
+        <attr name="centerScale" format="float" />
+        <attr name="moveSpeed" format="float" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_30"
+    android:layout_marginTop="@dimen/dp_10"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_market"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/app_eaecf5_4dp"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dp_8"
+        android:paddingVertical="@dimen/dp_4"
+        android:text="good"
+        android:textColor="@color/color_63727D"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

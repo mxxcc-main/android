@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginBottom="@dimen/dp_56"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:background="@drawable/shape_bn_gt_oval_yes_1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="搜索或输入DApp网址"
+                android:paddingLeft="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+
+            <ImageView
+                android:id="@+id/search_img"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="40dp"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/icon_search"
+
+                />
+
+
+        </LinearLayout>
+
+        <!--    baner-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.qy.ccm.view.group.banner.BannerLayout
+                android:id="@+id/bl_include_main"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginVertical="@dimen/dp_10"
+                android:background="@drawable/shape_bg_radius_4dp"
+                app:autoPlaying="true"
+                app:centerScale="1"
+                app:itemSpace="50"
+                app:moveSpeed="1.8"
+                app:showIndicator="true"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_22"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="4dp"
+                android:layout_height="@dimen/dp_14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/shape_bg_color_424959_radius_4dp_4"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="推荐"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_16" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/etherscan_id"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="9.4dp"
+                android:layout_marginTop="11.7dp"
+                android:layout_marginBottom="15.3dp"
+                android:layout_weight="1"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical|center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_44"
+                    android:layout_height="@dimen/dp_44"
+                    android:gravity="center_vertical|center"
+                    android:src="@mipmap/ether" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/dp_3"
+                    android:gravity="center_vertical|center"
+                    android:text="Etherscan"
+                    android:textColor="@color/color_37416B"
+
+                    android:textSize="@dimen/sp_13" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btc_id"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="9.4dp"
+                android:layout_marginTop="11.7dp"
+                android:layout_marginBottom="15.3dp"
+                android:layout_weight="1"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical|center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_44"
+                    android:layout_height="@dimen/dp_44"
+                    android:gravity="center_vertical|center"
+                    android:src="@mipmap/btc" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/dp_3"
+                    android:gravity="center_vertical|center"
+                    android:text="Bitcoin"
+                    android:textColor="@color/color_37416B"
+
+                    android:textSize="@dimen/sp_13" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ccm_id"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="9.4dp"
+                android:layout_marginTop="11.7dp"
+                android:layout_marginBottom="15.3dp"
+                android:layout_weight="1"
+                android:background="@color/color_ffffff"
+                android:gravity="center_vertical|center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_44"
+                    android:layout_height="@dimen/dp_44"
+                    android:gravity="center_vertical|center"
+                    android:padding="@dimen/dp_2"
+                    android:src="@mipmap/ccm" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/dp_3"
+                    android:gravity="center_vertical|center"
+                    android:text="CCM"
+                    android:textColor="@color/color_37416B"
+                    android:textSize="@dimen/sp_13" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/color_f1f1f1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_id_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_22"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/color_ffffff"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/dp_14"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@drawable/shape_bg_color_424959_radius_4dp_4"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="应用"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_16" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sar_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="@dimen/dp_17"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:padding="@dimen/dp_10"
+                    android:src="@mipmap/ccm"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SAR数字资产交易所"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/color_37416B"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="SAR数字资产交易所于2019年8月23日正式开始交易,众多资产持有人可进行入场交易。 "
+                            android:textColor="@color/color_8037416B"
+                            android:textSize="@dimen/sp_13" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@color/color_f1f1f1"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+<LinearLayout
+                android:id="@+id/ht_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="@dimen/dp_17"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:padding="@dimen/dp_10"
+                    android:src="@mipmap/babite"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="巴比特论坛"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/color_37416B"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="巴比特始建于2011年，是国内最早的区块链（blockchain）资讯社区门户"
+                            android:textColor="@color/color_8037416B"
+                            android:textSize="@dimen/sp_13" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@color/color_f1f1f1"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/okb_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_17"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:padding="5dp"
+                    android:src="@mipmap/jinsecaijing"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="金色财经"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/color_37416B"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="金色财经是集行业新闻、资讯、行情、数据等一站式区块链产业服务平台"
+                            android:textColor="@color/color_8037416B"
+                            android:textSize="@dimen/sp_13" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@color/color_f1f1f1"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lsk_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_17"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:src="@mipmap/lsk"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LSK"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/color_37416B"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Lsk基于自己的区块链网络和代币LSK"
+                            android:textColor="@color/color_8037416B"
+                            android:textSize="@dimen/sp_13" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@color/color_f1f1f1"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

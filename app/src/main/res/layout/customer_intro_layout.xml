@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_1186ce"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_50">
+
+    <com.github.paolorotolo.appintro.AppIntroViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true" />
+
+
+    <!--<com.lijiankun24.shadowlayout.ShadowLayout-->
+    <!--android:id="@+id/start_tiyan_id"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--app:shadowColor="#66000000"-->
+    <!--app:shadowDx="0dp"-->
+    <!--app:shadowDy="3dp"-->
+    <!--app:shadowRadius="0dp"-->
+    <!--app:shadowSide="all">-->
+
+    <Button
+
+        android:id="@+id/start_tiyan_id"
+        android:layout_width="@dimen/dp_108"
+        android:layout_height="@dimen/dp_44"
+        android:layout_gravity="center"
+        android:padding="1dp"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shape_bg_color_54aed9_radius_25dp"
+        android:gravity="center"
+        android:text="立即体验"
+        android:textColor="@color/color_ffffff"
+        android:textSize="16sp" />
+
+    <!--</com.lijiankun24.shadowlayout.ShadowLayout>-->
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appIntroBottomBarHeight"
+        android:background="@android:color/transparent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/bottom_separator"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#55000000" />
+
+        <FrameLayout
+            android:id="@+id/bottomContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <FrameLayout
+                android:id="@+id/indicator_container"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layoutDirection="ltr" />
+
+            <Button
+                android:id="@+id/skip"
+                style="@style/AppIntroButtonStyleCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:minWidth="100dp"
+                android:text="@string/app_intro_skip_button"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/back"
+                style="@style/AppIntroButtonStyleCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:minWidth="100dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_navigate_before_white"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/next"
+                style="@style/AppIntroButtonStyleCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:minWidth="100dp"
+                app:srcCompat="@drawable/ic_navigate_next_white"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/done"
+                style="@style/AppIntroButtonStyleCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:minWidth="100dp"
+                android:text="@string/app_intro_done_button"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

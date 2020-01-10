@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Data">
+        <item>您配偶的生日是？</item>
+        <item>您母亲的生日是？</item>
+        <item>您小学班主任的名字是？</item>
+        <item>您最熟悉的童年好友名字是？</item>
+        <item>对您影响最大的人名字是？</item>
+    </string-array>
+    <string-array name="DataUserFallback">
+        <item>如何快速查询转账交易状态?</item>
+        <item>转账失败是什么原因?</item>
+        <item>为什么转账失败也会扣除矿工费?</item>
+        <item>转账时填错地址怎么办?</item>
+        <item>交易到账，但不显示怎么办?</item>
+    </string-array>
+</resources>

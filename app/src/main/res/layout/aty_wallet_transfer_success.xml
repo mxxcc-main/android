@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_transfer_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_5467B4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_transfer_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_FBFCFC"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_transfer_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+231.3424"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_28" />
+
+                <TextView
+                    android:id="@+id/coin_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" CCM"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_20" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_transfer_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_35"
+                android:gravity="center_vertical"
+                android:text="账户余额 1803.33 GOAL"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_10" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_70"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@mipmap/icon_success" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_transfer_success">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <com.qy.ccm.view.group.TransactionLinearLayout
+                    android:id="@+id/tll_transfer_hash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qy.ccm.view.group.TransactionLinearLayout
+                    android:id="@+id/tll_transfer_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qy.ccm.view.group.TransactionLinearLayout
+                    android:id="@+id/tll_transfer_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.qy.ccm.view.group.TransactionLinearLayout
+                    android:id="@+id/tll_transfer_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qy.ccm.view.group.TransactionLinearLayout
+                    android:id="@+id/tll_transfer_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qy.ccm.view.group.TransactionLinearLayout
+                    android:id="@+id/tll_transfer_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.qy.ccm.view.group.TransactionLinearLayout
+                    android:id="@+id/tll_transfer_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"  />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+</LinearLayout>

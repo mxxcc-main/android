@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_161935"
+    android:orientation="vertical">
+
+    <com.qy.ccm.view.group.NavigationLucencyLayout
+        android:id="@+id/nll_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/tv_transaction2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_80"
+            android:text="数量0.0001 CCM"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/tv_transfer_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_40"
+            android:text="手续费（0.2312 CCM）"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <SeekBar
+            android:id="@+id/sb_wallet_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:maxHeight="5dp"
+            android:min="0"
+            android:minHeight="5dp"
+            android:paddingLeft="@dimen/dp_13"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_13"
+            android:paddingBottom="3dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="慢"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_16"
+                android:text="快"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            android:text="收款地址"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:text="1FpBSz8wLQJfJ1ew3x7UrdCbgGgSNJ7bHW"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_wallet_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_36"
+        android:layout_marginBottom="@dimen/dp_66"
+        android:background="@drawable/shape_bn_gt_oval_dp8"
+        android:gravity="center"
+        android:padding="@dimen/dp_13"
+        android:text="@string/transfer"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/v_id_img"
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_34"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ccm"
+
+            />
+
+        <TextView
+            android:id="@+id/v_id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/v_id_img"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="CCM"
+            android:textColor="@color/color_63727D"
+            android:textSize="@dimen/sp_17"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usd_id_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0321"
+                android:textColor="@color/color_2E303B"
+                android:textSize="@dimen/sp_17" />
+
+
+            <TextView
+                android:id="@+id/rmb_id_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usd_id_num"
+                android:text="≈ ￥ 62.26"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c_time0113_88f0f0f0"
+
+        />
+</LinearLayout>
